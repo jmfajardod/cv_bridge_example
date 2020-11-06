@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+    
+    <!--
+    <node pkg="uvc_camera" type="uvc_camera_node" name="uvc_cam" />
+    -->
+
+    <node pkg="cv_camera_orb" type="calib_cam.py" name="calib" output="screen">
+        <rosparam command="load" file="$(find cv_camera_orb)/config/config.yaml" />
+    </node>
+
+</launch>
